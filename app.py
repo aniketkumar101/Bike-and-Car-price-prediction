@@ -52,9 +52,8 @@ input_data = {
     
 # When the user clicks the button, predict the price
 b1,sub,b2 = st.columns(3)
-b3,wr,b4 = st.columns(3)
 if sub.button('Predict Price'):
     prediction = predict_price(model, input_data)
-    wr.write(f"Predicted price : {prediction[0]:.2f} Lakhs")
+    st.write(f"Predicted price : {prediction[0]:.2f} Lakhs")
 
 
