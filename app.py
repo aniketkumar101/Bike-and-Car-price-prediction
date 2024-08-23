@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # Load the model
-with open('car_price_model.pkl', 'rb') as file:
+with open('price_model.pkl', 'rb') as file:
     model = pickle.load(file)
     
 # Load the feature names
